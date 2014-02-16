@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cvt () {
+    local out="res/$2"
+    mkdir -p "$(dirname "$out")"
+    convert -resize "$1" icon.png "$out" || exit
+}
+
+cvt 72x72 drawable-hdpi/ic_launcher.png
+cvt 48x48 drawable-mdpi/ic_launcher.png
+cvt 96x96 drawable-xhdpi/ic_launcher.png

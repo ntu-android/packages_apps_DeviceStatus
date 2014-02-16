@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_title">NTU Android Homework</string>
+	<string name="battery_label">Batter</string>
+</resources>
